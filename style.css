@@ -1,55 +1,132 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f9f4ec;
-    color: #333;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: hsl(328, 21%, 88%);
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
 
 header {
-    background-color: #f4b400;
-    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px 0;
     text-align: center;
-    padding: 20px 0;
 }
 
-.profile-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 20px auto;
-    display: block;
-    border: 3px solid #fff;
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
-.introduction {
-    text-align: center;
-    padding: 20px;
+p {
+    font-size: 1.2rem;
 }
 
-.skills {
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
+main {
+    margin-top: 40px;
+}
+
+#event-creation {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
     text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
 }
 
-.contact {
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+    background: #fff;
+    color: #333;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #2575fc;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #6a11cb;
+}
+
+#event-listing {
+    margin-top: 40px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.event-item {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.event-item p {
+    margin: 5px 0;
+}
+
+.event-item h3 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
     text-align: center;
     padding: 20px;
+    margin-top: 40px;
+    font-size: 1rem;
 }
 
-.contact a {
-    color: #f4b400;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contact a:hover {
-    text-decoration: underline;
+footer p {
+    margin: 0;
 }

@@ -3,36 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>EventLitez - Manage Your Events</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <h1>Welcome to My Portfolio</h1>
+        <div class="container">
+            <h1>EventLitez</h1>
+            <p>Create, View, and Manage Your Events Easily</p>
+        </div>
     </header>
 
-    <img src="saloni.jpeg"  class="profile-image">
+    <main>
+        <section id="event-creation">
+            <div class="container">
+                <h2>Create an Event</h2>
+                <form id="eventForm">
+                    <div class="input-group">
+                        <label for="eventName">Event Name:</label>
+                        <input type="text" id="eventName" placeholder="Event Name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="eventDate">Event Date:</label>
+                        <input type="date" id="eventDate" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="eventTime">Event Time:</label>
+                        <input type="time" id="eventTime" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="eventLocation">Location:</label>
+                        <input type="text" id="eventLocation" placeholder="Location" required>
+                    </div>
+                    <button type="submit" class="btn">Add Event</button>
+                </form>
+            </div>
+        </section>
 
-    <section class="introduction">
-        <p>Hello! My name is <span class = "span" > Saloni Sahu </span>. I am passionate about web development and enjoy creating clean and user-friendly designs. Here you can find examples of my work and learn more about me!</p>
-    </section>
+        <section id="event-listing">
+            <div class="container">
+                <h2>Upcoming Events</h2>
+                <ul id="events"></ul>
+            </div>
+        </section>
+    </main>
 
-    <section class="skills">
-        <h2>My Skills</h2>
-        <ul>
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>Responsive Design</li>
-            <li>Python</li>
-            <li>MySQL</li>
-        </ul>
-    </section>
+    <footer>
+        <p>&copy; 2025 EventLitez. All rights reserved.</p>
+    </footer>
 
-    <section class="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:your.email@example.com">sahusaloni434@gmail.com</a></p>
-        <p>Phone: 8109318670</p>
-    </section>
+    <script src="script.js"></script>
 </body>
 </html>
-
